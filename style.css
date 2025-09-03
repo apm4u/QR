@@ -1,0 +1,114 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background Gradient */
+body {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Container */
+.container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.container h1 {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.container p {
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+/* Form */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 0.8rem;
+  border: 2px solid #4facfe;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #0078ff;
+}
+
+button {
+  background: #4facfe;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0078ff;
+}
+
+/* QR Code Area */
+.qr-container {
+  margin-top: 1rem;
+}
+
+#qr-code {
+  margin: 1rem auto;
+}
+
+#download-link {
+  display: inline-block;
+  background: #00c851;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+#download-link:hover {
+  background: #007e33;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
